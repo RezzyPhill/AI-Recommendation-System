@@ -1,1 +1,0 @@
-public record Book(String genreIs, int chapters, String author){}
