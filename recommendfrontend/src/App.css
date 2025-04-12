@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+:root {
+  --clr-card: #ffffff;
+  --clr-primary: #2563eb; /* A nice blue */
+  --clr-primary-dark: #1d4ed8;
+  --clr-text: #1e293b; /* slate-800 */
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--clr-text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card Container */
+.card {
+  background: var(--clr-card);
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  width: min(90vw, 420px);
+}
+
+/* Card Title */
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+/* Form Layout */
+.form {
+  display: grid;
+  gap: 1.1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+/* Inputs / selects */
+input,
+select {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #cbd5e1; /* slate‑300 */
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--clr-primary);
+}
+
+/* Button styling */
+button {
+  margin-top: 0.5rem;
+  padding: 0.65rem 1rem;
+  border: none;
+  border-radius: 12px;
+  background: var(--clr-primary);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: var(--clr-primary-dark);
+}
+
+/* Recommendation output */
+.output {
+  margin-top: 1.5rem;
+  background: #f8fafc;      /* slate‑50 */
+  border: 1px solid #e2e8f0; /* slate‑200 */
+  padding: 1rem;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  max-height: 260px;
+  overflow-y: auto;
+}
